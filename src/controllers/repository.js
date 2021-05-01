@@ -1,5 +1,5 @@
-const moment = require('moment')
-const modify = require('../auxFunctions/createUpdateQuery')
+//const moment = require('moment')
+//const modify = require('../auxFunctions/createUpdateQuery')
 const mongo = require('../dbConnection/mongoCon')
 
 

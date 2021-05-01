@@ -1,12 +1,12 @@
 const mongo = require('../dbConnection/mongoCon')
 
 
-const createRep = async (req, res) => {
+const createUsuario = async (req, res) => {
 
     
     const mongoconnection = await mongo.connect()
 
-    const collection =  mongoconnection.collection('user')
+    const collection =  mongoconnection.collection('Actor')
     
     await collection.insertOne()
 
@@ -16,11 +16,11 @@ const createRep = async (req, res) => {
 
 }
 
-const getReps = async (req, res) => {
+const getUsuario = async (req, res) => {
 
     const mongoconnection = await mongo.connect()
 
-    const collection =  mongoconnection.collection('user')
+    const collection =  mongoconnection.collection('Actor')
     
     const data = collection.find()
     
