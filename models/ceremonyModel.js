@@ -23,7 +23,7 @@ const ceremonySchema = Schema( {
     
     participants:{
         type: [{
-            id_act : String
+            id_teammember : String
              }]
     },
     
@@ -38,4 +38,4 @@ const ceremonySchema = Schema( {
     }
 })
 
-mongoose.model('Ceremony', ceremonySchema)
+module.exports = mongoose.model('Ceremony', ceremonySchema)

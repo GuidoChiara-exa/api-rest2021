@@ -2,7 +2,7 @@
 const mongoose = require ('mongoose')
 const Schema = mongoose.Schema
 
-const actorSchema = Schema( {
+const teammemberSchema = Schema( {
 
     //inician esion con este? o con algun mail o algo?
     name:{ type: String,
@@ -22,4 +22,4 @@ const actorSchema = Schema( {
 
 })
 
-mongoose.model('Actor', actorSchema)
+module.exports = mongoose.model('Teammember', teammemberSchema)

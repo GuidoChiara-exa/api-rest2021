@@ -8,6 +8,10 @@ const taskSchema = Schema( {
         unique: true
     },
 
+    proyect:{
+        type = String
+    },
+
     name:{
         type: String
     },
@@ -31,7 +35,8 @@ const taskSchema = Schema( {
     subtasks:{
         type: [{
             id_task : String
-        }]
+        }],
+        required = false
     },
     
     expiration_date:{
@@ -50,7 +55,7 @@ const taskSchema = Schema( {
         type: String
     },
 
-    actor:{
+    teammember:{
         type: String
     },
     
@@ -60,4 +65,4 @@ const taskSchema = Schema( {
     }
 })
 
-mongoose.model('Task', taskSchema)
+module.exports = mongoose.model('Task', taskSchema)
