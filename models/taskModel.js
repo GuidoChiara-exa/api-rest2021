@@ -49,6 +49,10 @@ const taskSchema = Schema( {
     state:{
         type: String
     },
+
+    actor:{
+        type: String
+    },
     
     id_previous:{
         type: String,
