@@ -62,6 +62,10 @@ const taskSchema = Schema( {
     id_previous:{
         type: String,
         required: false
+    },
+
+    actual:{
+        type: Boolean
     }
 })
 
