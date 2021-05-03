@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 
 const teammemberSchema = Schema( {
 
-    //inician esion con este? o con algun mail o algo?
+    
     name:{ type: String,
             unique: true,
             required: true
@@ -18,7 +18,7 @@ const teammemberSchema = Schema( {
     role:{
         type: String,
         required: false
-    },
+    }
 
 })
 

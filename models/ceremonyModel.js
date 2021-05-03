@@ -7,6 +7,10 @@ const ceremonySchema = Schema( {
         type: String,
         unique: true
     },
+    
+    project:{
+        type: String
+    },
 
     date:{
         type: date,
